@@ -5,14 +5,22 @@
 @tailwind utilities;
 
 
-@layer base{
-     body{
+@layer base {
+     body {
           @apply font-body;
      }
-     h1,h2,h3{
+
+     h1,
+     h2,
+     h3 {
           @apply font-display text-gray-800 font-medium;
      }
-     .container{
-          @apply px-6 py-12  max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32; 
+
+     .container {
+          @apply px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32 bg-gradient-to-t from-transparent via-orange-50 to-transparent;
+     }
+
+     .h2-style {
+          @apply text-5xl leading-normal sm:font-semibold max-w-2xl;
      }
 }
